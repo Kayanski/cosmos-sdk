@@ -2,6 +2,7 @@ package gaskv
 
 import (
 	"io"
+    "log"
 
 	"github.com/cosmos/cosmos-sdk/store/types"
 )
