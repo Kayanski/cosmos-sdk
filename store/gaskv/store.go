@@ -34,6 +34,7 @@ func (gs *Store) GetStoreType() types.StoreType {
 // Implements KVStore.
 func (gs *Store) Get(key []byte) (value []byte) {
 	gs.gasMeter.ConsumeGas(gs.gasConfig.ReadCostFlat, types.GasReadCostFlatDesc)
+	log.Fatal("Nicoco Error")
 	value = gs.parent.Get(key)
 
 	// TODO overflow-safe math?
